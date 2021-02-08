@@ -186,7 +186,6 @@
 }
 
 .surf {
-    padding: 160px 0 120px;
     background: url(../img/surf-bg.svg) top 200px (right / auto) no-repeat;
     &__subtitle {
         text-align: right;
@@ -194,9 +193,7 @@
         margin-top: -86px;
     }
     &-box {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background: center (center / cover) no-repeat;
         &__inner {
             min-height: 750px;
             background: rgba($color: #1C2121, $alpha: 0.85);
@@ -261,6 +258,7 @@
             position: absolute;
             bottom: 35px;
             transform: translateX(-50%);
+            z-index: 3;
             &::before {
                 content: '';
                 position: absolute;
@@ -427,5 +425,6 @@
     }
 }
 
+@import './block/travel';
 
 @import "media";
