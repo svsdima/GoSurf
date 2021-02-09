@@ -83,11 +83,13 @@
     }
     &__star-list {
         position: absolute;
-        right: 0;
+        right: 90px;
         top: -5px;
         li {
             display: inline-block;
-            // margin-left: -25px;
+            & + li {
+                margin-left: -25px;
+            }
             
         }
         img {

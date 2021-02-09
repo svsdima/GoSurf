@@ -1,0 +1,175 @@
+.shop {
+    &__slider {
+        &-inner {
+            display: flex;
+        }
+        &-info {
+            max-width: 480px;
+            margin-right: 40px;
+            width: 100%;
+            padding-top: 166px;
+        }
+        &-item {
+            padding: 160px 0 0 132px;
+        }
+        &-inner {
+            background: top (right) no-repeat;
+        }
+        &-price {
+            position: relative;
+            padding-top: 60px;
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 64px;
+            sup {
+                font-size: 18px;
+                padding-left: 5px;
+            }
+        }
+        &-content {
+            padding-left: 170px;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+    &__star-list {
+        left: 0;
+        li {
+            margin-left: -10px;
+            & + li {
+                margin-left: -25px;
+            }
+        }
+    }
+    .descr__head-shop {
+        max-width: 350px;
+        margin-bottom: 47px;
+    }
+    &__extras {
+        padding-left: 150px;
+        &-title {
+            font-weight: 800;
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 25px;
+        }
+        &-inner {
+            display: flex;
+        }
+        &-img {
+            min-height: 105px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 35px;
+        }
+        &-box {
+            text-align: center;
+            margin-right: 57px;
+            img {
+
+            }
+        }
+        &-name {
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 8px;
+            opacity: 0.5;
+            margin-bottom: 16px;
+        }
+        &-price {
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 40px;
+        }
+    }
+    .slider-arrows {
+        opacity: 0.25;
+    }
+}
+.surfboard {
+    position: relative;
+    &-box {
+        position: absolute;
+        right: 40px;
+        top: 215px;
+        &__circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: relative;
+            background-color: #fff;
+            cursor: pointer;
+            &.active {
+                .circle-row {
+                    transform: translate(-50%, -50%) rotate(0deg);
+                }
+            }
+        }
+        &__content {
+            display: none;
+            position: absolute;
+            width: 360px;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 24px;
+            padding-left: 104px;
+            top: -15px;
+            left: 40px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 80px;
+                height: 1px;
+                background-color: rgba($color: #fff, $alpha: 0.5);
+                left: 0;
+                top: 50%;
+            }
+        }
+    }
+}
+.surfboard__position--1 {
+
+}
+.surfboard__position--2 {
+    left: -5px;
+    top: 300px;
+}
+.surfboard__position--3 {
+    top: auto;
+    right: auto;
+    bottom: 70px;
+    left: 52px;
+    .surfboard-box__content {
+        padding-left: 0;
+        padding-right: 104px;
+        top: -15px;
+        left: -400px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 1px;
+            background-color: rgba($color: #fff, $alpha: 0.5);
+            right: 0;
+            left: auto;
+            top: 50%;
+        }
+    }
+}
+.surfboard-box__circle.active + .surfboard-box__content {
+    display: block;
+}
+.circle-row {
+    background-color: $green;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    & + .circle-row {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+}
