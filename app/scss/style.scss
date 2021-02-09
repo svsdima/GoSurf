@@ -1,7 +1,8 @@
-@import "vars";
-@import "libs";
-@import "fonts";
-@import 'global';
+@import "./base/vars";
+@import "./base/libs";
+@import "./base/fonts";
+@import './base/input';
+@import './base/global';
 
 
 .header {
@@ -425,6 +426,6 @@
     }
 }
 
-@import './block/travel';
+@import './block/holder';
 
-@import "media";
+@import "./base/media";
