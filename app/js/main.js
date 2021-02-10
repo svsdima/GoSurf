@@ -91,7 +91,11 @@ $('.quantity').each(function () {
 /* При клике на + на доске, будет появляться информация */
 
 $('.surfboard-box__circle').on('click', function() {
-    $(this).toggleClass('active')
+    $(this).toggleClass('active');
+});
+
+$('.menu-btn').on('click', function() {
+  $('.menu').toggleClass('active');
 });
 
 });
