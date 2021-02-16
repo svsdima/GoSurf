@@ -6,7 +6,9 @@
         margin-top: -86px;
     }
     &-box {
-        background: center (center / cover) no-repeat;
+        &__wrapper {
+            background: center (center / cover) no-repeat;
+        }
         &__inner {
             min-height: 750px;
             background: rgba($color: #1C2121, $alpha: 0.85);
@@ -60,6 +62,7 @@
     
     .slick-list {
         min-height: 635px;
+        overflow: visible;
     }
     .slick-current {
         .map-dots__content {
@@ -81,7 +84,7 @@
                 border-left: 12px solid transparent;
                 border-right: 12px solid transparent;
                 bottom: -21px;
-                left: calc(50% - 1px);
+                left: calc(50% - 0.5px);
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
             }
@@ -100,7 +103,6 @@
     .map-dots--2 {
         top: 270px;
         left: 0;
-        position: relative;
         &::before {
             content: "";
             position: absolute;
@@ -155,6 +157,7 @@
         height: 23px;
         background-color: $green;
         border-radius: 50%;
+        box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.83);
     }
     &__content {
         display: none;

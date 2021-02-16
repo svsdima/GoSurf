@@ -14,6 +14,13 @@ $('.slider-dots').slick({
     slidesToScroll: 4,
     asNavFor: '.header__slider',
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 961,
+        setting: "unslick"
+      },
+    ]
+    
 });
 
 $('.surf-slider').slick({
@@ -22,6 +29,35 @@ $('.surf-slider').slick({
     prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="arrows-left"></img>',
     nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="arrows-right"></img>',
     asNavFor: '.slider-map',
+    responsive: [
+      {
+        breakpoint: 1210,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 901,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 426,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        }
+      },
+    ]
 });
 
 $('.slider-map').slick({
@@ -30,6 +66,28 @@ $('.slider-map').slick({
     arrows: false,
     asNavFor: '.surf-slider',
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1081,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 901,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        }
+      },
+    ]
 });
 
 $('.holder__slider, .shop__slider').slick({
