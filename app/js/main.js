@@ -158,5 +158,21 @@ $('.menu-btn').on('click', function() {
 
 new WOW().init();
 
+/* Появление кнопки */
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 1600) {
+    $('.up__arrows').fadeIn();
+  } else {
+    $('.up__arrows').fadeOut();
+  }
+});
+
+/* Плавный скролл */
+$("a[href^='#']").click(function(){
+  var _href = $(this).attr("href");
+  $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+  return false;
+});
+
 });
 

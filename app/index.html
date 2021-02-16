@@ -11,13 +11,13 @@
 </head>
 <body>
 
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__title">
       go surf
     </div>
     <!-- Стрелка вниз -->
     <div class="header__arrows">
-      <a href="#" class="animate__animated animate__fadeInDown animate__infinite animate__slow">
+      <a href="#surf" class="animate__animated animate__fadeInDown animate__infinite animate__slow">
         <img src="img/arrows-down.svg" alt="arrows-down">
       </a>
     </div>
@@ -56,22 +56,22 @@
       <nav class="menu">
         <ul class="menu__list">
           <li>
-            <a href="#">
+            <a href="#surf">
               <img src="img/nav-ico-1.svg" alt="nav-ico-1"><span>Surf</span>
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="img/nav-ico-2.svg" alt="nav-ico-2"><span>holder</span>
+            <a href="#travel">
+              <img src="img/nav-ico-2.svg" alt="nav-ico-2"><span>Travel</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#sleep">
               <img src="img/nav-ico-3.svg" alt="nav-ico-3"><span>Sleep</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#shop">
               <img src="img/nav-ico-4.svg" alt="nav-ico-4"><span>Shop</span>
             </a>
           </li>
@@ -166,7 +166,7 @@
   </header>
   <div class="container">
     <!-- Сёрф -->
-    <section class="surf">
+    <section id="surf" class="surf">
       <div class="title">
         <div>
           <span class="animate__animated wow animate__fadeInLeft" data-wow-offset="400">surf</span>
@@ -539,7 +539,7 @@
       </div>
     </section>
     <!-- Путешествия -->
-    <section class="holder">
+    <section id="travel" class="holder">
       <div class="container">
         <div class="title">
           <div>
@@ -717,7 +717,7 @@
       </div>
     </section>
     <!-- Sleep -->
-    <section class="holder sleep">
+    <section id="sleep" class="holder sleep">
       <div class="container">
         <div class="title">
           <div>
@@ -1007,7 +1007,7 @@
       </div>
     </section>
     <!-- Магазин -->
-    <section class="shop">
+    <section id="shop" class="shop">
       <div class="container">
         <div class="title">
           <div>
@@ -1302,6 +1302,12 @@
   </div>
   <!-- Сёрф -->
 
+  <!-- Стрелка вниз -->
+  <div class="up__arrows">
+    <a href="#header" class="animate__animated animate__fadeInUp animate__infinite animate__slow">
+      <img src="img/up-arrows.svg" alt="arrows-up">
+    </a>
+  </div>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
